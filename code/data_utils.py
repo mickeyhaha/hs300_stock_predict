@@ -133,7 +133,10 @@ def quchong(file):
 
 if __name__ == '__main__':
 	print(1)
-	# fill_stock_data('d:\data\\399300.csv', 'd:\data\\201904\\', 'd:\data\\201904-fill\\')
-	# merge_stock_data('d:\data\\201904-fill\\', 'd:\data\\')
-	get_stock_data('000001', '2019-05-01', '2019-05-31', 'd:\data\\')
+	ts.set_token('eac33068f9d5ed6f2930faa5dba40f71a6f41bd2ed6b4e4c6ab83fa7')
+	pro = ts.pro_api()
+
+	#fill_stock_data('/Users/dong/projects/stock/hs300_stock_predict/data/399300.csv', '/Users/dong/projects/stock/hs300_stock_predict/data/201904/', '/Users/dong/projects/stock/hs300_stock_predict/data/201904-fill/')
+	#merge_stock_data('/Users/dong/projects/stock/hs300_stock_predict/data/201904-fill/', '/Users/dong/projects/stock/hs300_stock_predict/data/')
+	get_stock_data('000001', '2019-05-01', '2019-05-31', '/Users/dong/projects/stock/hs300_stock_predict/data/')
 	# print(get_data_len('d:\data\\000001.csv'))
